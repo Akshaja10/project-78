@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>2nd project</title>
+</head>
+<body>
+<h1> MY FAMILY BOOK </h1>
+<img Id="trees" src= "https://tse2.mm.bing.net/th?id=OIP.ml0Uu4nIp1s81eevnNJ9bwHaHa&pid=Api&P=0&w=300&h=300" width="300 px">
+<div> 
+<button type= "button" onclick= "nextslide()"> Next </button>
+</div>
+<h3 Id= "reasontext">FAMILY </h3>
+<script>
+var names_1= [
+"Dad",
+"Mom",
+"Brother",
+"Me"
+];
+var images=[
+"https://clipartspub.com/images/dad-clipart-7.jpg" ,
+"https://clipground.com/images/healthy-woman-clipart-13.jpg",
+"https://webstockreview.net/images/brother-clipart-cartoon-2.jpg",
+"https://st3.depositphotos.com/6633222/16258/v/950/depositphotos_162589944-stock-illustration-cute-little-girl-cartoon.jpg"
+];
+var i=0;
+function nextslide(){
+document.getElementById (
+ "reasontext").innerHTML= names_1[i];
+document.getElementById ("trees").src= images[i];
+i++;
+}
+
+
+
+</script>
+</body>
+</html>
